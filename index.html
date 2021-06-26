@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <script src='./scripts/jquery-3.6.0.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"
+        integrity="sha512-yNJzAsg5JyP91u+sLHlUDULMBd3hmEiVkYeeN1cQBKaLZ7EyT6oH2u5THNIRM2Fu6VKcZJv+F/QAp1h/qzy9Ow=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            overflow: hidden;
+        }
+
+        .webgl {
+            position: fixed;
+            top: 0;
+            left: 0;
+            outline: none;
+        }
+    </style>
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+    <header class="nav-bar-header">
+        <nav class="nav-bar nav-bar-hidden">
+            <ul class="nav-bar-list">
+                <li class="nav-item"><a href="/index.html" class="nav-item-link">Home</a></li>
+                <li class="nav-item"><a href="/catalog.php" class="nav-item-link">Catalog</a></li>
+                <li class="nav-item"><a href="/cart.php" class="nav-item-link cart-nav-item">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <canvas class="webgl"></canvas>
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
